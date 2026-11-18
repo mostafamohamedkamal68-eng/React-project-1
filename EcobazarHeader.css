@@ -1,0 +1,72 @@
+.eco-header {
+  width: 100%;
+  min-height: 64px;
+  padding: 10px clamp(16px, 2.1vw, 30px);
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(230px, 380px) minmax(160px, 1fr);
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  color: #172c1d;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -.65px;
+}
+.eco-leaf { width: 22px; height: 21px; color: #00b207; }
+
+.eco-search {
+  height: 38px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.eco-search-field { min-width: 0; flex: 1; display: flex; align-items: center; gap: 7px; padding: 0 10px; }
+.eco-search-field svg { width: 15px; height: 15px; fill: none; stroke: #333; stroke-width: 1.6; stroke-linecap: round; }
+.eco-search input { width: 100%; min-width: 0; border: 0; outline: 0; color: #333; font-size: 11px; background: transparent; }
+.eco-search input::placeholder { color: #858585; opacity: 1; }
+.eco-search button { width: 72px; border: 0; color: white; background: #00b207; font-size: 11px; font-weight: 600; cursor: pointer; }
+.eco-search button:hover { background: #009e06; }
+
+.eco-actions { display: flex; justify-content: flex-end; align-items: center; gap: 12px; }
+.eco-user-name { max-width: 110px; overflow: hidden; color: #555; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.eco-logout { padding: 6px 9px; border: 1px solid #e5e5e5; border-radius: 16px; color: #444; background: #fff; font-size: 10px; cursor: pointer; }
+.eco-logout:hover { border-color: #00b207; color: #008f06; }
+.eco-icon-button, .eco-cart { padding: 0; border: 0; background: transparent; color: #1a1a1a; cursor: pointer; }
+.eco-icon-button { position: relative; display: grid; place-items: center; width: 29px; height: 32px; }
+.eco-icon-button.is-active { color: #00b207; }
+.eco-icon-button svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.eco-divider { width: 1px; height: 27px; background: #e6e6e6; }
+.eco-cart { display: flex; align-items: center; gap: 8px; text-align: left; }
+.eco-basket-wrap { position: relative; display: grid; place-items: center; width: 24px; height: 28px; }
+.eco-basket-wrap svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.eco-cart-count { position: absolute; top: -2px; right: -4px; width: 13px; height: 13px; display: grid; place-items: center; border: 1px solid #fff; border-radius: 50%; background: #00b207; color: #fff; font-size: 8px; line-height: 1; }
+.eco-cart-copy { display: flex; flex-direction: column; gap: 2px; white-space: nowrap; }
+.eco-cart-copy small { color: #4d4d4d; font-size: 8px; font-weight: 400; }
+.eco-cart-copy strong { color: #1a1a1a; font-size: 9px; font-weight: 600; }
+
+@media (max-width: 640px) {
+  .eco-header { grid-template-columns: 1fr auto; gap: 13px 10px; padding: 12px 16px; }
+  .eco-brand { font-size: 19px; }
+  .eco-search { grid-column: 1 / -1; grid-row: 2; }
+  .eco-actions { grid-column: 2; grid-row: 1; gap: 9px; }
+}
+
+@media (max-width: 370px) {
+  .eco-cart-copy { display: none; }
+  .eco-divider { height: 22px; }
+}

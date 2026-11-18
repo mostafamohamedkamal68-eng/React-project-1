@@ -1,0 +1,110 @@
+.eco-shop { max-width: 1280px; margin: 0 auto; padding: 22px 24px 48px; font-family: Arial, Helvetica, sans-serif; color: #1a1a1a; }
+.eco-shop-toolbar { min-height: 40px; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+.eco-filter-button { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border: 0; border-radius: 20px; color: #fff; background: #00b207; font-size: 12px; cursor: pointer; }
+.eco-filter-button span { font-size: 14px; }
+.eco-sort { display: flex; align-items: center; gap: 8px; margin-right: auto; color: #777; font-size: 11px; }
+.eco-sort select { min-width: 110px; padding: 7px 10px; border: 1px solid #e5e5e5; border-radius: 4px; color: #333; background: #fff; font-size: 11px; }
+.eco-result-count, .eco-cart-count-label { margin: 0; color: #777; font-size: 11px; white-space: nowrap; }
+.eco-result-count strong { color: #222; }
+.eco-cart-count-label { padding: 0; border: 0; color: #222; background: transparent; cursor: pointer; }
+.eco-cart-count-label:hover { color: #00a807; }
+.eco-search-status { margin: 0 0 12px; color: #555; font-size: 13px; }
+.eco-cart-summary { padding: 16px; margin: 0 0 18px; border: 1px solid #e7e7e7; border-radius: 6px; background: #fff; }
+.eco-cart-summary h2 { margin: 0 0 12px; font-size: 16px; }
+.eco-cart-row { display: flex; align-items: center; gap: 14px; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 13px; }
+.eco-cart-row > span { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.eco-cart-row small { color: #777; font-size: 11px; }
+.eco-cart-row button { padding: 5px 8px; border: 1px solid #ddd; border-radius: 4px; background: white; cursor: pointer; }
+.eco-cart-summary > strong { display: block; margin-top: 12px; text-align: right; }
+.eco-shop-layout { display: grid; grid-template-columns: 218px minmax(0, 1fr); align-items: start; gap: 20px; }
+.eco-shop-layout.filters-hidden { grid-template-columns: 1fr; }
+.eco-shop-sidebar { min-width: 0; }
+.eco-filter-group { padding: 0 0 14px; margin: 0 0 13px; border-bottom: 1px solid #eee; }
+.eco-filter-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.eco-filter-title h2, .eco-sale-products h2 { margin: 0; color: #222; font-size: 12px; font-weight: 600; }
+.eco-filter-title span { color: #666; font-size: 13px; }
+.eco-category-option { display: flex; align-items: center; gap: 5px; min-height: 20px; color: #555; font-size: 10px; cursor: pointer; }
+.eco-category-option input, .eco-rating-option input { width: 12px; height: 12px; margin: 0; accent-color: #00b207; }
+.eco-category-option small { color: #999; font-size: 9px; }
+.eco-price-slider { width: 100%; height: 14px; margin: 0; accent-color: #00b207; cursor: pointer; }
+.eco-price-range { margin: 5px 0 0; color: #666; font-size: 9px; }
+.eco-price-range strong { color: #333; font-weight: 500; }
+.eco-rating-option { display: flex; align-items: center; gap: 5px; height: 19px; color: #666; font-size: 9px; cursor: pointer; }
+.eco-product-stars { display: inline-block; color: #ff8a00; font-size: 11px; letter-spacing: -.6px; white-space: nowrap; }
+.eco-product-stars span { color: #ddd; }
+.eco-tag-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.eco-tag-list button { padding: 5px 8px; border: 0; border-radius: 20px; color: #555; background: #f2f2f2; font-size: 9px; cursor: pointer; }
+.eco-tag-list button:hover, .eco-tag-list button.selected { color: #fff; background: #00b207; }
+.eco-sale-box { min-height: 100px; display: flex; justify-content: space-between; align-items: center; overflow: hidden; padding: 12px; margin-bottom: 18px; border-radius: 6px; background: linear-gradient(120deg,#f3f4f1,#e9f1df); }
+.eco-sale-box > div { color: #333; font-size: 11px; }
+.eco-sale-box strong { color: #ff8a00; font-size: 18px; }
+.eco-sale-box p { margin: 3px 0 7px; font-size: 9px; }
+.eco-sale-box button { padding: 0; border: 0; color: #00a807; background: transparent; font-size: 9px; font-weight: 700; cursor: pointer; }
+.eco-sale-box > span { align-self: end; font-size: 37px; letter-spacing: -17px; }
+.eco-sale-products h2 { margin-bottom: 9px; }
+.eco-sale-item { width: 100%; min-height: 52px; display: flex; align-items: center; gap: 7px; padding: 5px; border: 1px solid #eee; border-radius: 4px; margin-bottom: 6px; color: inherit; background: #fff; text-align: left; font: inherit; cursor: pointer; }
+.eco-sale-item:hover, .eco-sale-item:focus-visible { border-color: #00b207; }
+.eco-sale-emoji { width: 43px; height: 38px; display: grid; place-items: center; background: #fafafa; font-size: 25px; }
+.eco-sale-emoji img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.eco-sale-details { min-width: 0; flex: 1; }
+.eco-sale-name { display: block; margin: 0 0 2px; color: #555; font-size: 9px; }
+.eco-sale-price { display: block; color: #222; font-size: 9px; }
+.eco-sale-item strong, .eco-sale-item del { font-size: 9px; }
+.eco-sale-item del { color: #aaa; }
+.eco-sale-item .eco-product-stars { display: block; font-size: 9px; }
+.eco-products { min-width: 0; }
+.eco-api-error { padding: 8px 10px; border-radius: 4px; margin: 0 0 10px; color: #8a5a00; background: #fff7e3; font-size: 12px; }
+.eco-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+.eco-product-card { min-width: 0; height: 205px; position: relative; display: flex; flex-direction: column; overflow: hidden; border: 1px solid #e7e7e7; border-radius: 5px; background: #fff; transition: border-color .18s, box-shadow .18s; }
+.eco-product-card:hover { border-color: #00b207; box-shadow: 0 0 0 1px #00b207; }
+.eco-product-select { min-height: 0; flex: 1; display: flex; flex-direction: column; padding: 0; border: 0; color: inherit; background: transparent; text-align: left; cursor: pointer; }
+.eco-product-select:disabled { cursor: not-allowed; }
+.eco-product-select:focus-visible { outline: 2px solid #00b207; outline-offset: -2px; }
+.eco-product-art { width: 100%; height: 143px; flex: 0 0 auto; display: grid; place-items: center; color: #333; background: #fff; font-size: clamp(54px, 6vw, 83px); line-height: 1; }
+.eco-product-image { width: min(78%, 170px); height: 90%; object-fit: contain; }
+.eco-product-info { display: block; padding: 3px 9px 8px; }
+.eco-product-name { display: block; overflow: hidden; margin: 0 0 3px; color: #4c4c4c; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.eco-product-price { display: flex; align-items: center; gap: 5px; margin-bottom: 1px; font-size: 10px; }
+.eco-product-price strong { color: #222; font-weight: 600; }
+.eco-product-price del { color: #999; font-size: 9px; }
+.eco-product-info > .eco-product-stars { font-size: 10px; }
+.eco-favorite { width: 24px; height: 24px; position: absolute; top: 7px; right: 7px; display: grid; place-items: center; padding: 4px; border: 1px solid #eee; border-radius: 50%; color: #555; background: #fff; cursor: pointer; opacity: 0; transition: opacity .15s; }
+.eco-product-card:hover .eco-favorite, .eco-favorite.active { opacity: 1; }
+.eco-favorite svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.eco-favorite svg.is-filled { fill: #00b207; stroke: #00b207; }
+.eco-stock-badge, .eco-sale-badge { position: absolute; z-index: 1; top: 7px; left: 7px; padding: 4px 6px; border-radius: 2px; color: #fff; background: #222; font-size: 8px; }
+.eco-sale-badge { background: #ea4b48; }
+.eco-add-cart { width: 25px; height: 25px; position: absolute; right: 8px; bottom: 9px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; color: #666; background: #f2f2f2; font-size: 18px; line-height: 1; cursor: pointer; }
+.eco-add-cart:hover { color: #fff; background: #00b207; }
+.eco-add-cart.disabled { cursor: not-allowed; }
+.eco-empty-state { min-height: 320px; display: grid; place-content: center; justify-items: center; color: #666; text-align: center; }
+.eco-empty-state > span { font-size: 48px; }
+.eco-empty-state h2 { margin: 8px 0 0; color: #222; font-size: 18px; }
+.eco-empty-state p { font-size: 13px; }
+.eco-empty-state button { padding: 9px 15px; border: 0; border-radius: 20px; color: white; background: #00b207; cursor: pointer; }
+
+@media (max-width: 850px) {
+  .eco-shop-layout { grid-template-columns: 190px minmax(0,1fr); gap: 14px; }
+  .eco-product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .eco-product-card { height: 195px; }
+  .eco-product-art { height: 132px; }
+}
+@media (max-width: 600px) {
+  .eco-shop { padding: 16px 14px 32px; }
+  .eco-shop-toolbar { flex-wrap: wrap; gap: 10px; }
+  .eco-sort { margin-right: 0; }
+  .eco-result-count { margin-left: auto; }
+  .eco-cart-count-label { display: inline; }
+  .eco-shop-layout, .eco-shop-layout.filters-hidden { grid-template-columns: 1fr; }
+  .eco-shop-sidebar { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .eco-filter-group { margin: 0; padding: 10px; border: 1px solid #eee; border-radius: 5px; }
+  .eco-tag-filter, .eco-sale-box, .eco-sale-products { grid-column: 1 / -1; }
+  .eco-sale-products { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+  .eco-sale-products h2 { grid-column: 1 / -1; }
+  .eco-sale-item { min-width: 0; flex-direction: column; align-items: flex-start; }
+  .eco-sale-emoji { width: 100%; }
+  .eco-product-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; }
+  .eco-product-card { height: 190px; }
+  .eco-product-art { height: 126px; }
+  .eco-favorite { opacity: 1; }
+}

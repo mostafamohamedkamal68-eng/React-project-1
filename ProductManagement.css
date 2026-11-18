@@ -1,0 +1,306 @@
+.eco-product-adminbar {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.eco-add-product-trigger,
+.eco-add-product-link {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  background: #00b207;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.eco-add-product-trigger:hover:not(:disabled),
+.eco-add-product-link:hover {
+  background: #009d06;
+}
+
+.eco-add-product-trigger:disabled {
+  cursor: wait;
+  opacity: .55;
+}
+
+.eco-add-product-trigger > span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.eco-product-admin-status {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.eco-product-local-note {
+  margin: 0 0 10px;
+  color: #725b1b;
+  font-size: 12px;
+}
+
+.eco-product-admin-actions {
+  position: absolute;
+  z-index: 3;
+  top: 7px;
+  right: 7px;
+  display: flex;
+  gap: 4px;
+}
+
+.eco-product-admin-button {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  color: #168522;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.eco-product-admin-button:hover:not(:disabled) {
+  color: #fff;
+  background: #00b207;
+  border-color: #00b207;
+}
+
+.eco-product-admin-button--danger {
+  color: #c73838;
+}
+
+.eco-product-admin-button--danger:hover:not(:disabled) {
+  color: #fff;
+  background: #d64545;
+  border-color: #d64545;
+}
+
+.eco-product-admin-button svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.eco-product-admin-button:disabled {
+  cursor: wait;
+  opacity: .55;
+}
+
+.eco-product-card--admin-visible .eco-favorite {
+  top: 36px;
+}
+
+.eco-product-card--admin-visible:hover .eco-favorite,
+.eco-product-card--admin-visible .eco-favorite.active {
+  opacity: 1;
+}
+
+.eco-product-admin-success {
+  color: #087b22;
+  font-size: 12px;
+}
+
+.eco-product-admin-actions .eco-product-admin-success {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  padding: 3px 6px;
+  border: 1px solid #d5ead7;
+  border-radius: 4px;
+  background: #f3fff4;
+  white-space: nowrap;
+}
+
+.eco-product-admin-error {
+  position: absolute;
+  top: 31px;
+  right: 0;
+  width: 190px;
+  padding: 6px 8px;
+  border: 1px solid #f0cccc;
+  border-radius: 4px;
+  color: #9f2525;
+  background: #fff5f5;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.eco-product-modal-backdrop {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgb(0 0 0 / 42%);
+}
+
+.eco-product-modal {
+  position: relative;
+  width: min(100%, 430px);
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 10px;
+  color: #1a1a1a;
+  background: #fff;
+  box-shadow: 0 18px 60px rgb(0 0 0 / 22%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.eco-product-modal h2 {
+  margin: 0 32px 20px 0;
+  color: #222;
+  font-size: 19px;
+}
+
+.eco-product-admin-message {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.eco-product-admin-message p,
+.eco-product-delete-copy {
+  margin: 0;
+}
+
+.eco-product-delete-copy {
+  margin-bottom: 18px;
+  color: #666;
+  font-size: 13px;
+}
+
+.eco-product-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  color: #555;
+  background: #f4f4f4;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.eco-api-form {
+  display: grid;
+  gap: 14px;
+}
+
+.eco-api-field {
+  display: grid;
+  gap: 6px;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.eco-api-field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 11px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  background: #fff;
+  font: inherit;
+  font-weight: 400;
+}
+
+.eco-product-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 3px;
+}
+
+.eco-product-modal-actions .eco-api-button,
+.eco-product-modal-cancel {
+  min-height: 38px;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 5px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.eco-product-modal-actions .eco-api-button {
+  color: #fff;
+  background: #00b207;
+}
+
+.eco-product-delete-confirm {
+  min-height: 38px;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #d64545;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.eco-product-delete-confirm:hover:not(:disabled) {
+  background: #bd3333;
+}
+
+.eco-product-modal-cancel {
+  color: #555;
+  background: #f1f1f1;
+}
+
+.eco-product-modal-actions button:disabled {
+  cursor: wait;
+  opacity: .55;
+}
+
+.eco-api-error {
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin: 0;
+  color: #9f2525;
+  background: #fff1f1;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .eco-product-adminbar {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
